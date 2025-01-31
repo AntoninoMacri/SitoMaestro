@@ -2,7 +2,7 @@
   <div class="bg-gray-100 min-h-screen">
     <!-- Sezione Benvenuto -->
     <section
-      class="max-w-7xl mx-auto p-8 flex flex-col md:flex-row justify-between items-center md:items-start gap-y-6 md:gap-x-8"
+      class="max-w-7xl mx-auto p-8 flex flex-col md:flex-row-reverse justify-between items-center md:items-start gap-y-6 md:gap-x-8"
     >
       <!-- Contenuto Testuale -->
       <div class="w-full md:w-2/3 text-left md:order-first">
