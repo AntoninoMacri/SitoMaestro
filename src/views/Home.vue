@@ -9,7 +9,7 @@
         <img
           :src="imageSrc"
           alt="Immagine Benvenuto"
-          class="w-48 md:w-full rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105"
+          class="w-full rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105"
           @click="openLightbox"
         />
       </div>
