@@ -4,12 +4,13 @@
     <section
       class="max-w-7xl mx-auto p-8 flex flex-col md:flex-row justify-between items-center md:items-start gap-y-6 md:gap-x-8"
     >
-      <!-- Immagine sopra il testo su mobile -->
+      <!-- Immagine con Lightbox -->
       <div class="w-full md:w-1/3">
         <img
-          src="../assets/SifuLuca-GranMasterCheung.jpeg"
+          :src="imageSrc"
           alt="Immagine Benvenuto"
-          class="w-full rounded-lg shadow-lg"
+          class="w-48 md:w-full rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105"
+          @click="openLightbox"
         />
       </div>
 
@@ -34,30 +35,30 @@
       </div>
     </section>
 
+    <!-- Lightbox -->
+    <div
+      v-if="isLightboxOpen"
+      class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center"
+      @click="closeLightbox"
+    >
+      <img :src="imageSrc" alt="Immagine Lightbox" class="max-w-full max-h-full rounded-lg shadow-lg" />
+    </div>
+
     <!-- Sezione News -->
     <section class="max-w-7xl mx-auto p-8">
       <h2 class="text-3xl font-bold text-gray-800 mb-6">Ultime News</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Card News -->
         <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
           <h3 class="text-xl font-semibold text-gray-800 mb-4">Titolo News 1</h3>
-          <p class="text-gray-600">
-            Descrizione breve della news. Questo è un esempio di card per visualizzare le ultime novità.
-          </p>
+          <p class="text-gray-600">Descrizione breve della news.</p>
         </div>
-
         <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
           <h3 class="text-xl font-semibold text-gray-800 mb-4">Titolo News 2</h3>
-          <p class="text-gray-600">
-            Un'altra news interessante da condividere con i nostri visitatori. Dettagli sulla scuola e sui corsi.
-          </p>
+          <p class="text-gray-600">Un'altra news interessante.</p>
         </div>
-
         <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
           <h3 class="text-xl font-semibold text-gray-800 mb-4">Titolo News 3</h3>
-          <p class="text-gray-600">
-            La terza news riguarda eventi, competizioni o altre notizie importanti per la nostra comunità.
-          </p>
+          <p class="text-gray-600">Eventi e competizioni importanti.</p>
         </div>
       </div>
     </section>
@@ -68,6 +69,18 @@
 </template>
 
 <script setup>
-// Importa il componente Footer
+import { ref } from "vue";
 import Footer from "../components/Footer.vue";
+import imagePath from "../assets/SifuLuca-GranMasterCheung.jpeg"; // Import dell'immagine
+
+const isLightboxOpen = ref(false);
+const imageSrc = ref(imagePath); // Usa l'import invece del percorso stringa
+
+const openLightbox = () => {
+  isLightboxOpen.value = true;
+};
+
+const closeLightbox = () => {
+  isLightboxOpen.value = false;
+};
 </script>
