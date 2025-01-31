@@ -14,7 +14,7 @@
       <li class="relative group">
         <button class="hover:text-gray-300">Corsi</button>
         <ul
-          class="absolute left-0 mt-2 w-40 bg-gray-700 text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 flex-col"
+          class="absolute left-0 mt-2 w-40 bg-black text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 flex-col"
         >
           <li><router-link to="/corsi/tutti" class="block px-4 py-2 hover:bg-gray-600">Tutti i corsi</router-link></li>
           <li><router-link to="/corsi/wingchun" class="block px-4 py-2 hover:bg-gray-600">Wing Chun</router-link></li>
@@ -31,7 +31,7 @@
       <li class="relative group">
         <button class="hover:text-gray-300">Storia</button>
         <ul
-          class="absolute left-0 mt-2 w-40 bg-gray-700 text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 flex-col"
+          class="absolute left-0 mt-2 w-40 bg-black text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 flex-col"
         >
           <li><router-link to="/storia" class="block px-4 py-2 hover:bg-gray-600">Storia Generale</router-link></li>
           <li><router-link to="/storia/wingchun" class="block px-4 py-2 hover:bg-gray-600">WingChun</router-link></li>
@@ -53,7 +53,7 @@
       <li class="relative group">
         <button class="text-white hover:text-gray-300">Le Nostre Scuole</button>
         <ul
-          class="absolute left-0 mt-2 w-40 bg-gray-700 text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 flex-col"
+          class="absolute left-0 mt-2 w-40 bg-black text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 flex-col"
         >
           <li>
             <router-link to="/le-nostre-scuole" class="block px-4 py-2 hover:bg-gray-600">Le Nostre Scuole</router-link>
