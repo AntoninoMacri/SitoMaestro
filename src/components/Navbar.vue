@@ -14,7 +14,7 @@
       <li class="relative group">
         <button class="hover:text-gray-300">Corsi</button>
         <ul
-          class="absolute left-0 mt-2 w-40 bg-gray-700 text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300"
+          class="absolute left-0 mt-2 w-40 bg-gray-700 text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 flex-col"
         >
           <li><router-link to="/corsi/tutti" class="block px-4 py-2 hover:bg-gray-600">Tutti i corsi</router-link></li>
           <li><router-link to="/corsi/wingchun" class="block px-4 py-2 hover:bg-gray-600">Wing Chun</router-link></li>
@@ -31,7 +31,7 @@
       <li class="relative group">
         <button class="hover:text-gray-300">Storia</button>
         <ul
-          class="absolute left-0 mt-2 w-40 bg-gray-700 text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300"
+          class="absolute left-0 mt-2 w-40 bg-gray-700 text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 flex-col"
         >
           <li><router-link to="/storia" class="block px-4 py-2 hover:bg-gray-600">Storia Generale</router-link></li>
           <li><router-link to="/storia/wingchun" class="block px-4 py-2 hover:bg-gray-600">WingChun</router-link></li>
@@ -51,9 +51,9 @@
 
       <!-- Dropdown Le Nostre Scuole -->
       <li class="relative group">
-        <button class="hover:text-gray-300">Le Nostre Scuole</button>
+        <button class="text-white hover:text-gray-300">Le Nostre Scuole</button>
         <ul
-          class="absolute left-0 mt-2 w-40 bg-gray-700 text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300"
+          class="absolute left-0 mt-2 w-40 bg-gray-700 text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 flex-col"
         >
           <li>
             <router-link to="/le-nostre-scuole" class="block px-4 py-2 hover:bg-gray-600">Le Nostre Scuole</router-link>
@@ -70,8 +70,9 @@
           </li>
         </ul>
       </li>
-      <li><router-link to="/blog" class="hover:text-gray-300">Blog</router-link></li>
-      <li><router-link to="/contact" class="hover:text-gray-300">Contatti</router-link></li>
+
+      <li><router-link to="/blog" class="text-white hover:text-gray-300">Blog</router-link></li>
+      <li><router-link to="/contact" class="text-white hover:text-gray-300">Contatti</router-link></li>
     </ul>
 
     <!-- Mobile menu icon -->
@@ -85,54 +86,48 @@
   </nav>
 
   <!-- Menu mobile che si apre -->
-  <div v-if="open" class="flex flex-col items-start space-y-4 md:hidden bg-gray-800 p-4">
-    <router-link to="/" class="hover:text-gray-300 text-white">Benvenuto</router-link>
+  <div v-if="open" class="text-white flex flex-col items-start space-y-4 md:hidden bg-gray-800 p-4">
+    <router-link to="/" class="hover:text-gray-300">Benvenuto</router-link>
 
     <!-- Dropdown Corsi per Mobile -->
     <div class="relative">
-      <button @click="toggleDropdown('corsi')" class="text-white hover:text-gray-300">Corsi</button>
-      <div v-show="dropdowns.corsi" class="space-y-2 pl-4">
-        <router-link to="/corsi/tutti" class="text-white hover:text-gray-300">Tutti i corsi</router-link>
-        <router-link to="/corsi/wingchun" class="text-white hover:text-gray-300">Wing Chun</router-link>
-        <router-link to="/corsi/wingchun-advanced" class="text-white hover:text-gray-300"
-          >Wing Chun Advanced</router-link
-        >
-        <router-link to="/corsi/ctd" class="text-white hover:text-gray-300">C.T.D.</router-link>
+      <button @click="toggleDropdown('corsi')" class="hover:text-gray-300">Corsi</button>
+      <div v-show="dropdowns.corsi" class="space-y-2 pl-4 flex-col">
+        <router-link to="/corsi/tutti" class="hover:text-gray-300">Tutti i corsi</router-link>
+        <router-link to="/corsi/wingchun" class="hover:text-gray-300">Wing Chun</router-link>
+        <router-link to="/corsi/wingchun-advanced" class="hover:text-gray-300">Wing Chun Advanced</router-link>
+        <router-link to="/corsi/ctd" class="hover:text-gray-300">C.T.D.</router-link>
       </div>
     </div>
 
     <!-- Dropdown Storia per Mobile -->
     <div class="relative">
-      <button @click="toggleDropdown('storia')" class="text-white hover:text-gray-300">Storia</button>
-      <div v-show="dropdowns.storia" class="space-y-2 pl-4">
-        <router-link to="/storia" class="text-white hover:text-gray-300">Storia Generale</router-link>
-        <router-link to="/storia/wingchun" class="text-white hover:text-gray-300">WingChun</router-link>
-        <router-link to="/storia/ctd" class="text-white hover:text-gray-300">CTD</router-link>
-        <router-link to="/storia/gm-william-cheung" class="text-white hover:text-gray-300"
-          >GM William Cheung</router-link
-        >
-        <router-link to="/storia/shaolin-temple" class="text-white hover:text-gray-300">Shaolin Temple</router-link>
+      <button @click="toggleDropdown('storia')" class="hover:text-gray-300">Storia</button>
+      <div v-show="dropdowns.storia" class="space-y-2 pl-4 flex-col">
+        <router-link to="/storia" class="hover:text-gray-300">Storia Generale</router-link>
+        <router-link to="/storia/wingchun" class="hover:text-gray-300">WingChun</router-link>
+        <router-link to="/storia/ctd" class="hover:text-gray-300">CTD</router-link>
+        <router-link to="/storia/gm-william-cheung" class="hover:text-gray-300">GM William Cheung</router-link>
+        <router-link to="/storia/shaolin-temple" class="hover:text-gray-300">Shaolin Temple</router-link>
       </div>
     </div>
 
     <!-- Dropdown Le Nostre Scuole per Mobile -->
     <div class="relative">
-      <button @click="toggleDropdown('le-nostre-scuole')" class="text-white hover:text-gray-300">
-        Le Nostre Scuole
-      </button>
-      <div v-show="dropdowns['le-nostre-scuole']" class="space-y-2 pl-4">
-        <router-link to="/le-nostre-scuole" class="text-white hover:text-gray-300">Le Nostre Scuole</router-link>
-        <router-link to="/le-nostre-scuole/scuole-riconosciute" class="text-white hover:text-gray-300"
+      <button @click="toggleDropdown('le-nostre-scuole')" class="hover:text-gray-300">Le Nostre Scuole</button>
+      <div v-show="dropdowns['le-nostre-scuole']" class="space-y-2 pl-4 flex-col">
+        <router-link to="/le-nostre-scuole" class="hover:text-gray-300">Le Nostre Scuole</router-link>
+        <router-link to="/le-nostre-scuole/scuole-riconosciute" class="hover:text-gray-300"
           >Scuole Riconosciute</router-link
         >
-        <router-link to="/le-nostre-scuole/sifu-loris-vincenzi" class="text-white hover:text-gray-300"
+        <router-link to="/le-nostre-scuole/sifu-loris-vincenzi" class="hover:text-gray-300"
           >Sifu Loris Vincenzi</router-link
         >
       </div>
     </div>
 
-    <router-link to="/blog" class="text-white hover:text-gray-300">Blog</router-link>
-    <router-link to="/contact" class="text-white hover:text-gray-300">Contatti</router-link>
+    <router-link to="/blog" class="hover:text-gray-300">Blog</router-link>
+    <router-link to="/contact" class="hover:text-gray-300">Contatti</router-link>
   </div>
 </template>
 
