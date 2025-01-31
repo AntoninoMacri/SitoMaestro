@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-black text-white py-8 mt-8">
+  <footer class="bg-black text-white py-8 mt-auto">
     <div class="max-w-7xl mx-auto px-8">
       <div class="flex flex-col items-start space-y-4">
         <p class="text-lg">Contatti</p>
