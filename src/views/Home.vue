@@ -6,10 +6,12 @@
       <div class="w-full md:w-1/3">
         <img
           :src="imageSrc"
-          alt="Immagine Benvenuto"
+          alt="Sifu Luca Campiglio con il Gran Maestro William Cheung, uno scatto durante una lezione di Wing Chun"
           class="w-full rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105 md:max-h-90 object-cover"
           @click="openLightbox"
         />
+        <!-- Nota sotto l'immagine -->
+        <p class="text-center text-gray-600 mt-4">Sifu Luca Campiglio con il Grande Maestro William Cheung</p>
       </div>
 
       <!-- Contenuto Testuale e News (a destra su desktop) -->
