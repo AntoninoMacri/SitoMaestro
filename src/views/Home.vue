@@ -13,16 +13,20 @@
         <div class="text-left">
           <div class="text-lg text-gray-700 space-y-6">
             <p>
-              Mi chiamo Luca Campiglio e sono allievo del GM William Cheung. Dal 1994 inizio a praticare il Wing Chun e
-              dal 1997 pratico ed insegno il Wing Chun Tradizionale presso le mie scuole di Legnago, Montagnana e Zevio.
+              Mi chiamo Luca Campiglio e sono allievo diretto del Grande Maestro William Cheung, amico e compagno di
+              allenamento del grande Bruce lee.
+            </p>
+            <p>
+              Dal 1994 pratico Wing Chun tradizionale e dal 1997 lo insegno presso le mie scuole di Legnago, Montagnana
+              e Zevio.
             </p>
             <p>
               Ai miei corsi sono benvenute tutte le persone che desiderano avvicinarsi a questa fantastica arte marziale
               inventata da una “monaca”.
             </p>
             <p>
-              Sono sempre attento a proporre ai miei allievi varie strategie di allenamento organizzando anche Stage
-              nazionali e internazionali.
+              Sono sempre attento a proporre ai miei allievi varie strategie di allenamento e organizzo Stage nazionali
+              e internazionali con grandi maestri presso le nostre palestre.
             </p>
           </div>
         </div>
