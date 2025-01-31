@@ -16,27 +16,28 @@
       <div class="w-full md:w-2/3 flex flex-col gap-8">
         <!-- Testo -->
         <div class="text-left">
-          <h1 class="text-3xl font-bold text-gray-800 mb-4">Benvenuti nella mia scuola di Wing Chun Tradizionale</h1>
+          <h1 class="text-3xl font-bold text-red-700 mb-4">Benvenuti nella mia scuola di Wing Chun Tradizionale</h1>
           <div class="text-lg text-gray-700 space-y-6">
+            <p>Mi chiamo Luca Campiglio e sono allievo del Grande Maestro William Cheung.</p>
             <p>
-              Mi chiamo Luca Campiglio e sono allievo del GM William Cheung. Dal 1994 inizio a praticare il Wing Chun e
-              dal 1997 pratico ed insegno il Wing Chun Tradizionale presso le mie scuole di Legnago, Montagnana e Zevio.
+              Dal 1994 pratico Wing Chun Tradizionale e dal 1997 lo insegno presso le mie scuole di Legnago, Montagnana
+              e Zevio.
             </p>
             <p>
               Ai miei corsi sono benvenute tutte le persone che desiderano avvicinarsi a questa fantastica arte marziale
               inventata da una “monaca”.
             </p>
             <p>
-              Sono sempre attento a proporre ai miei allievi varie strategie di allenamento organizzando anche Stage
-              nazionali e internazionali.
+              Sono sempre attento a proporre ai miei allievi varie strategie di allenamento organizzando, stage
+              nazionali e internazionali con grandi maestri.
             </p>
           </div>
         </div>
 
         <!-- Sezione News -->
         <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-          <h3 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
-            <!-- Icona di megafono a sinistra https://heroicons.com/outline-->
+          <h3 class="text-3xl font-bold text-red-700 mb-6 flex items-center">
+            <!-- Icona di megafono a sinistra -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

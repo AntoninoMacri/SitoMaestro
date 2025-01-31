@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-gray-800 p-4 text-white flex justify-between items-center">
+  <nav class="bg-black p-4 text-white flex justify-between items-center">
     <!-- Logo e Nome sito -->
     <div class="flex items-center">
       <img src="../assets/logo.jpg" alt="Logo Wing Chun Kung Fu Tradizionale" class="w-10 h-10 mr-2" />
@@ -104,7 +104,7 @@
   </nav>
 
   <!-- Menu mobile che si apre -->
-  <div v-if="open" class="text-white flex flex-col items-start space-y-4 md:hidden bg-gray-800 p-4">
+  <div v-if="open" class="text-white flex flex-col items-start space-y-4 md:hidden bg-black p-4">
     <router-link to="/" class="hover:text-gray-300">Benvenuto</router-link>
 
     <!-- Dropdown Corsi per Mobile -->
@@ -192,8 +192,8 @@ function toggleDropdown(menu) {
 }
 
 /* Colori per il menu mobile */
-.bg-gray-800 {
-  background-color: #2d3748; /* Colore grigio per il fondo */
+.bg-black {
+  background-color: black; /* Colore nero per lo sfondo */
 }
 
 .hover\:text-gray-300:hover {
