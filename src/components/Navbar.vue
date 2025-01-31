@@ -2,11 +2,17 @@
   <nav class="bg-black p-4 text-white flex justify-between items-center">
     <!-- Logo e Nome sito -->
     <div class="flex items-center">
-      <router-link to="/" class="flex items-center">
+      <!-- Controlla se siamo nella pagina "Benvenuto" -->
+      <router-link v-if="$route.path !== '/'" to="/" class="flex items-center">
         <!-- Logo -->
         <img src="../assets/logo.jpg" alt="Logo Wing Chun Kung Fu Tradizionale" class="w-12 h-12 mr-2" />
         <div class="text-2xl font-bold">Wing Chun Kung Fu Tradizionale - Cheung System</div>
       </router-link>
+      <div v-else class="flex items-center">
+        <!-- Logo come immagine statica se siamo nella pagina "Benvenuto" -->
+        <img src="../assets/logo.jpg" alt="Logo Wing Chun Kung Fu Tradizionale" class="w-12 h-12 mr-2" />
+        <div class="text-2xl font-bold">Wing Chun Kung Fu Tradizionale - Cheung System</div>
+      </div>
     </div>
 
     <!-- Menu, visibile su schermi più larghi -->
