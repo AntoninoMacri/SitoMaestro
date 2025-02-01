@@ -5,8 +5,12 @@
     <li>Email: <a href="mailto:cm.lucky71@gmail.com" class="underline">cm.lucky71@gmail.com</a></li>
     <li>Scuole: Legnago (VR) – Zevio (VR) – Montagnana (PD)</li>
   </ul>
+
+  <SocialLinks />
 </template>
 
-<script setup></script>
+<script setup>
+import SocialLinks from "./SocialLinks.vue";
+</script>
 
 <style scoped></style>

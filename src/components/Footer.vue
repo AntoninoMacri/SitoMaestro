@@ -4,8 +4,7 @@
       <div class="flex flex-col items-start space-y-4">
         <p class="text-lg">Contatti</p>
         <ContactInfo />
-        <p>© 2025 CTD Wing Chun Academy</p>
-        <SocialLinks />
+        <p class="text-right w-full">© 2025 CTD Wing Chun Academy</p>
       </div>
     </div>
   </footer>
@@ -13,7 +12,6 @@
 
 <script setup>
 import ContactInfo from "./ContactInfo.vue";
-import SocialLinks from "./SocialLinks.vue";
 </script>
 
 <style scoped></style>

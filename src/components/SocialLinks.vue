@@ -1,3 +1,4 @@
+//link icone: https://icons8.it/icons/set/social-media
 <template>
   <div class="flex space-x-4 mt-4">
     <a href="https://www.instagram.com/ctd_wing_chun_academy/" target="_blank">
