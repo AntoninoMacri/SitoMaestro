@@ -17,8 +17,8 @@
               allenamento del grande Bruce lee.
             </p>
             <p>
-              Dal 1994 pratico Wing Chun tradizionale e dal 1997 lo insegno presso le mie scuole di Legnago, Montagnana
-              e Zevio.
+              Dal 1994 pratico Wing Chun tradizionale e dal 1997 lo insegno presso le scuole di Legnago, Montagnana e
+              Zevio.
             </p>
             <p>
               Ai miei corsi sono benvenute tutte le persone che desiderano avvicinarsi a questa fantastica arte marziale
@@ -69,7 +69,7 @@
         <ul class="text-gray-600 space-y-4">
           <li><strong>Foto Eric Oram Seminar – 19 Ottobre 2024</strong></li>
           <li><strong>Foto Training Camp – 1 Ottobre 2024</strong></li>
-          <li><strong>Iscrizioni Corsi Wing Chun 2024 – 2025</strong></li>
+          <li><strong>Aperte le iscrizioni ai Corsi Wing Chun 2024 – 2025</strong></li>
         </ul>
       </div>
     </div>
