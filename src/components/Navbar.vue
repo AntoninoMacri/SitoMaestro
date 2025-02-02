@@ -32,9 +32,9 @@
               v-if="$route.path !== '/corsi/tutti i corsi'"
               to="/corsi/tutti i corsi"
               class="block px-4 py-2 text-xl hover:bg-gray-600"
-              >Tutti i corsi</router-link
+              >Luoghi e Orari</router-link
             >
-            <span v-else class="block px-4 py-2 text-xl">Tutti i corsi</span>
+            <span v-else class="block px-4 py-2 text-xl">Luoghi e Orari</span>
           </li>
           <li>
             <router-link
