@@ -11,8 +11,8 @@
 
             <h2 class="text-red-600 font-bold text-3xl">Programma del corso</h2>
             <p>
-              Il programma si compone di: tre forme a mani nude, due con armi, una con il bastone, una con i coltelli e
-              una con l’uomo di legno
+              Il programma si compone di: tre forme a mani nude, due con armi (una con il bastone, una con i coltelli),
+              una con l’uomo di legno e infine il lavoro integrativo di Chi Sao
             </p>
 
             <h3 class="text-black font-bold text-2xl">La forma Shil Lim Tao e Shil Lim Tao avanzata</h3>
