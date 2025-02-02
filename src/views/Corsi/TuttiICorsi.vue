@@ -7,6 +7,8 @@
         <!-- Testo -->
         <div class="text-left">
           <div class="text-lg text-gray-700 space-y-6">
+            <h1 class="text-red-600 font-bold text-3xl">GIORNI E ORARI DEI CORSI DI WING CHUN</h1>
+
             <p class="text-red-600 font-bold text-2xl">LEGNAGO (Verona)</p>
             <p>Via Leopardi, 3 – Scuole Elementari G. Cotta</p>
             <p>Martedì e Giovedì dalle ore 19.00 alle ore 20.00 – Inizio del corso Martedì 08 Ottobre 2024</p>
@@ -31,7 +33,7 @@
 
       <!-- Video -->
       <div class="w-full md:w-2/3">
-        <video :src="videoSrc" class="w-full rounded-lg shadow-lg" controls muted loop>
+        <video :src="videoSrc" class="w-full rounded-lg shadow-lg" controls loop>
           Il tuo browser non supporta il tag video.
         </video>
         <!-- Nota sotto il video -->
