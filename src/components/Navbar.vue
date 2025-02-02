@@ -65,6 +65,41 @@
           </li>
         </ul>
       </li>
+      <!-- Dropdown Le Nostre Scuole -->
+      <li class="relative group">
+        <button class="text-white hover:text-gray-300 text-xl">Le Nostre Scuole</button>
+        <ul
+          class="absolute left-0 mt-2 w-40 bg-black text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 flex-col"
+        >
+          <li>
+            <router-link
+              v-if="$route.path !== '/le-nostre-scuole/GlobalAssociation'"
+              to="/le-nostre-scuole/GlobalAssociation"
+              class="block px-4 py-2 text-xl hover:bg-gray-600"
+              >Global Association</router-link
+            >
+            <span v-else class="block px-4 py-2 text-xl">Global Association</span>
+          </li>
+          <li>
+            <router-link
+              v-if="$route.path !== '/le-nostre-scuole/MasterLucaCampiglio'"
+              to="/le-nostre-scuole/MasterLucaCampiglio"
+              class="block px-4 py-2 text-xl hover:bg-gray-600"
+              >Master Luca Campiglio</router-link
+            >
+            <span v-else class="block px-4 py-2 text-xl">Master Luca Campiglio</span>
+          </li>
+          <li>
+            <router-link
+              v-if="$route.path !== '/le-nostre-scuole/sifu-loris-vincenzi'"
+              to="/le-nostre-scuole/sifu-loris-vincenzi"
+              class="block px-4 py-2 text-xl hover:bg-gray-600"
+              >Sifu Loris Vincenzi</router-link
+            >
+            <span v-else class="block px-4 py-2 text-xl">Sifu Loris Vincenzi</span>
+          </li>
+        </ul>
+      </li>
 
       <!-- Dropdown Storia -->
       <li class="relative group">
@@ -117,42 +152,7 @@
         </ul>
       </li>
 
-      <!-- Dropdown Le Nostre Scuole -->
-      <li class="relative group">
-        <button class="text-white hover:text-gray-300 text-xl">Le Nostre Scuole</button>
-        <ul
-          class="absolute left-0 mt-2 w-40 bg-black text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 flex-col"
-        >
-          <li>
-            <router-link
-              v-if="$route.path !== '/le-nostre-scuole/GlobalAssociation'"
-              to="/le-nostre-scuole/GlobalAssociation"
-              class="block px-4 py-2 text-xl hover:bg-gray-600"
-              >Global Association</router-link
-            >
-            <span v-else class="block px-4 py-2 text-xl">Global Association</span>
-          </li>
-          <li>
-            <router-link
-              v-if="$route.path !== '/le-nostre-scuole/MasterLucaCampiglio'"
-              to="/le-nostre-scuole/MasterLucaCampiglio"
-              class="block px-4 py-2 text-xl hover:bg-gray-600"
-              >Master Luca Campiglio</router-link
-            >
-            <span v-else class="block px-4 py-2 text-xl">Master Luca Campiglio</span>
-          </li>
-          <li>
-            <router-link
-              v-if="$route.path !== '/le-nostre-scuole/sifu-loris-vincenzi'"
-              to="/le-nostre-scuole/sifu-loris-vincenzi"
-              class="block px-4 py-2 text-xl hover:bg-gray-600"
-              >Sifu Loris Vincenzi</router-link
-            >
-            <span v-else class="block px-4 py-2 text-xl">Sifu Loris Vincenzi</span>
-          </li>
-        </ul>
-      </li>
-
+      <!-- Dropdown Blog -->
       <li>
         <router-link v-if="$route.path !== '/blog'" to="/blog" class="text-white hover:text-gray-300 text-xl"
           >Blog</router-link
@@ -213,22 +213,6 @@
       </div>
     </div>
 
-    <!-- Dropdown Storia per Mobile -->
-    <div class="relative">
-      <button @click="toggleDropdown('storia')" class="hover:text-gray-300 text-xl">Storia</button>
-      <div v-show="dropdowns.storia" class="space-y-2 pl-4 flex-col">
-        <router-link @click="closeMenu" to="/storia" class="hover:text-gray-300 text-xl">Storia Generale</router-link>
-        <router-link @click="closeMenu" to="/storia/wingchun" class="hover:text-gray-300 text-xl">WingChun</router-link>
-        <router-link @click="closeMenu" to="/storia/ctd" class="hover:text-gray-300 text-xl">CTD</router-link>
-        <router-link @click="closeMenu" to="/storia/gm-william-cheung" class="hover:text-gray-300 text-xl"
-          >GM William Cheung</router-link
-        >
-        <router-link @click="closeMenu" to="/storia/shaolin-temple" class="hover:text-gray-300 text-xl"
-          >Shaolin Temple</router-link
-        >
-      </div>
-    </div>
-
     <!-- Dropdown Le Nostre Scuole per Mobile -->
     <div class="relative">
       <button @click="toggleDropdown('le-nostre-scuole')" class="hover:text-gray-300 text-xl">Le Nostre Scuole</button>
@@ -242,6 +226,24 @@
         <router-link @click="closeMenu" to="/le-nostre-scuole/sifu-loris-vincenzi" class="hover:text-gray-300 text-xl"
           >Sifu Loris Vincenzi</router-link
         >
+      </div>
+
+      <!-- Dropdown Storia per Mobile -->
+      <div class="relative">
+        <button @click="toggleDropdown('storia')" class="hover:text-gray-300 text-xl">Storia</button>
+        <div v-show="dropdowns.storia" class="space-y-2 pl-4 flex-col">
+          <router-link @click="closeMenu" to="/storia" class="hover:text-gray-300 text-xl">Storia Generale</router-link>
+          <router-link @click="closeMenu" to="/storia/wingchun" class="hover:text-gray-300 text-xl"
+            >WingChun</router-link
+          >
+          <router-link @click="closeMenu" to="/storia/ctd" class="hover:text-gray-300 text-xl">CTD</router-link>
+          <router-link @click="closeMenu" to="/storia/gm-william-cheung" class="hover:text-gray-300 text-xl"
+            >GM William Cheung</router-link
+          >
+          <router-link @click="closeMenu" to="/storia/shaolin-temple" class="hover:text-gray-300 text-xl"
+            >Shaolin Temple</router-link
+          >
+        </div>
       </div>
     </div>
 
