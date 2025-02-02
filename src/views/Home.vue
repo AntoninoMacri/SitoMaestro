@@ -64,7 +64,7 @@
 <script setup>
 import { ref, computed } from "vue";
 import Footer from "../components/Footer.vue"; // Aggiungi il percorso corretto al footer
-import imagePath from "../assets/SifuLuca-GranMasterCheung.jpeg"; // Import dell'immagine
+import imagePath from "../assets/wudendummy-Home.jpeg"; // Import dell'immagine
 
 const isLightboxOpen = ref(false);
 const imageSrc = ref(imagePath); // Usa l'import invece del percorso stringa
