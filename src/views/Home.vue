@@ -34,7 +34,7 @@
             <!-- Bottone "Voglio provare" -->
             <div class="mt-6 flex justify-start">
               <router-link
-                to="/le-nostre-scuole"
+                to="/corsi/tutti i corsi"
                 class="inline-block px-6 py-3 bg-red-600 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-red-700 transition-colors duration-300"
               >
                 Voglio provare
@@ -65,9 +65,6 @@
     >
       <img :src="imageSrc" alt="Immagine Lightbox" class="max-w-full max-h-full rounded-lg shadow-lg" />
     </div>
-
-    <!-- Componente Footer -->
-    <Footer />
   </div>
 </template>
 

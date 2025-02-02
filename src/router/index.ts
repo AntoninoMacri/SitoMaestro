@@ -3,6 +3,9 @@ import { createRouter, createWebHistory } from "vue-router";
 // Import delle pagine principali
 import Home from "../views/Home.vue";
 
+//Importi Corsi
+import TuttiICorsi from "../views/Corsi/TuttiICorsi.vue";
+
 // Storia e sottosezioni
 import Storia from "../views/Storia/Storia.vue";
 import WingChun from "../views/Storia/WingChun.vue";
@@ -50,6 +53,8 @@ const routes = [
   { path: "/storia/bruce-lee/lettera-3", name: "Lettera3", component: Lettera3 },
   { path: "/storia/bruce-lee/lettera-4", name: "Lettera4", component: Lettera4 },
   { path: "/storia/bruce-lee/lettera-5", name: "Lettera5", component: Lettera5 },
+
+  { path: "/corsi/tutti i corsi", name: "Tutti i corsi", component: TuttiICorsi },
 
   { path: "/le-nostre-scuole", name: "LeNostreScuole", component: LeNostreScuole },
   { path: "/le-nostre-scuole/scuole-riconosciute", name: "ScuoleRiconosciute", component: ScuoleRiconosciute },

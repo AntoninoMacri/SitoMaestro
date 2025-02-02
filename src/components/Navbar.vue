@@ -29,8 +29,8 @@
         >
           <li>
             <router-link
-              v-if="$route.path !== '/corsi/tutti'"
-              to="/corsi/tutti"
+              v-if="$route.path !== '/corsi/tutti i corsi'"
+              to="/corsi/tutti i corsi"
               class="block px-4 py-2 text-xl hover:bg-gray-600"
               >Tutti i corsi</router-link
             >
@@ -202,7 +202,7 @@
     <div class="relative">
       <button @click="toggleDropdown('corsi')" class="hover:text-gray-300 text-xl">Corsi</button>
       <div v-show="dropdowns.corsi" class="space-y-2 pl-4 flex-col">
-        <router-link to="/corsi/tutti" class="hover:text-gray-300 text-xl">Tutti i corsi</router-link>
+        <router-link to="/corsi/tutti i corsi" class="hover:text-gray-300 text-xl">Tutti i corsi</router-link>
         <router-link to="/corsi/wingchun" class="hover:text-gray-300 text-xl">Wing Chun</router-link>
         <router-link to="/corsi/wingchun-advanced" class="hover:text-gray-300 text-xl">Wing Chun Advanced</router-link>
         <router-link to="/corsi/ctd" class="hover:text-gray-300 text-xl">C.T.D.</router-link>
