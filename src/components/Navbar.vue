@@ -92,7 +92,7 @@
               v-if="$route.path !== '/storia/ctd'"
               to="/storia/ctd"
               class="block px-4 py-2 text-xl hover:bg-gray-600"
-              >CTD</router-link
+              >C.T.D.</router-link
             >
             <span v-else class="block px-4 py-2 text-xl">CTD</span>
           </li>
