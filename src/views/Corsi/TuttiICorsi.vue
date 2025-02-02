@@ -14,7 +14,7 @@
             <p class="text-black font-bold text-2xl">LEGNAGO (Verona)</p>
             <p><strong>Dove:</strong> Via Leopardi, 3 – Scuole Elementari G. Cotta</p>
             <p>
-              <strong>Quando:</strong>Martedì e Giovedì dalle ore 19.00 alle ore 20.00 – Inizio del corso Martedì 08
+              <strong>Quando:</strong> Martedì e Giovedì dalle ore 19.00 alle ore 20.00 – Inizio del corso Martedì 08
               Ottobre 2024
             </p>
 
@@ -22,14 +22,14 @@
             <p class="text-black font-bold text-2xl">BORGO SAN MARCO – MONTAGNANA (Padova)</p>
             <p><strong>Dove:</strong> Scuole Elementari via Arzarin, 2</p>
             <p>
-              <strong>Quando:</strong>Lunedì dalle ore 18.45 alle ore 19.45 – Inizio del corso Lunedì 07 Ottobre 2024
+              <strong>Quando:</strong> Lunedì dalle ore 18.45 alle ore 19.45 – Inizio del corso Lunedì 07 Ottobre 2024
             </p>
 
             <!-- Sezione "Perchè i miei corsi" -->
             <p class="text-black font-bold text-2xl">ZEVIO (Verona)</p>
             <p><strong>Dove:</strong> Via Altichiero, 21 – Scuole Medie</p>
             <p>
-              <strong>Quando:</strong>Venerdì dalle ore 18.30 alle ore 19.30 – Inizio del corso Venerdì 04 Ottobre 2024
+              <strong>Quando:</strong> Venerdì dalle ore 18.30 alle ore 19.30 – Inizio del corso Venerdì 04 Ottobre 2024
             </p>
 
             <h2 class="text-red-600 font-bold text-3xl">CORSI WING CHUN ADVANCED E C.T.D.</h2>
