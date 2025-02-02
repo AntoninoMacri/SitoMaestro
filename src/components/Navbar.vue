@@ -266,10 +266,17 @@ function toggleDropdown(menu) {
   opacity: 1;
 }
 
-/* Aggiungi una transizione per l'apertura del menu */
+/* Assicurati che i dropdown siano sopra il contenuto sottostante */
 .group ul {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  z-index: 10; /* Imposta un valore elevato per portare il dropdown in primo piano */
+  position: absolute; /* Rende il dropdown posizionato sopra il contenuto sottostante */
+}
+
+/* Per il menu mobile */
+.md:hidden .space-y-2 {
+  z-index: 10; /* Imposta un valore elevato per i dropdown mobile */
 }
 
 /* Personalizza il colore del menu hamburger */
