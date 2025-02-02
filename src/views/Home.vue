@@ -27,7 +27,7 @@
             <!-- Sezione "Perchè i miei corsi" -->
             <p class="text-red-600 font-bold text-2xl">Perchè i miei corsi</p>
             <p>
-              Sono sempre attento a proporre ai miei allievi varie strategie di allenamento e organizzo Stage nazionali
+              Sono sempre attento a proporre ai miei allievi varie strategie di allenamento e organizzo stage nazionali
               e internazionali con grandi maestri presso le nostre palestre.
             </p>
 
