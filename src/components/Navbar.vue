@@ -196,16 +196,20 @@
 
   <!-- Menu mobile che si apre -->
   <div v-if="open" class="text-white flex flex-col items-start space-y-4 md:hidden bg-black p-4">
-    <router-link to="/" class="hover:text-gray-300 text-xl">Benvenuto</router-link>
+    <router-link @click="closeMenu" to="/" class="hover:text-gray-300 text-xl">Benvenuto</router-link>
 
     <!-- Dropdown Corsi per Mobile -->
     <div class="relative">
       <button @click="toggleDropdown('corsi')" class="hover:text-gray-300 text-xl">Corsi</button>
       <div v-show="dropdowns.corsi" class="space-y-2 pl-4 flex-col">
-        <router-link to="/corsi/tutti i corsi" class="hover:text-gray-300 text-xl">Tutti i corsi</router-link>
-        <router-link to="/corsi/wingchun" class="hover:text-gray-300 text-xl">Wing Chun</router-link>
-        <router-link to="/corsi/wingchun-advanced" class="hover:text-gray-300 text-xl">Wing Chun Advanced</router-link>
-        <router-link to="/corsi/ctd" class="hover:text-gray-300 text-xl">C.T.D.</router-link>
+        <router-link @click="closeMenu" to="/corsi/tutti i corsi" class="hover:text-gray-300 text-xl"
+          >Tutti i corsi</router-link
+        >
+        <router-link @click="closeMenu" to="/corsi/wingchun" class="hover:text-gray-300 text-xl">Wing Chun</router-link>
+        <router-link @click="closeMenu" to="/corsi/wingchun-advanced" class="hover:text-gray-300 text-xl"
+          >Wing Chun Advanced</router-link
+        >
+        <router-link @click="closeMenu" to="/corsi/ctd" class="hover:text-gray-300 text-xl">C.T.D.</router-link>
       </div>
     </div>
 
@@ -213,11 +217,15 @@
     <div class="relative">
       <button @click="toggleDropdown('storia')" class="hover:text-gray-300 text-xl">Storia</button>
       <div v-show="dropdowns.storia" class="space-y-2 pl-4 flex-col">
-        <router-link to="/storia" class="hover:text-gray-300 text-xl">Storia Generale</router-link>
-        <router-link to="/storia/wingchun" class="hover:text-gray-300 text-xl">WingChun</router-link>
-        <router-link to="/storia/ctd" class="hover:text-gray-300 text-xl">CTD</router-link>
-        <router-link to="/storia/gm-william-cheung" class="hover:text-gray-300 text-xl">GM William Cheung</router-link>
-        <router-link to="/storia/shaolin-temple" class="hover:text-gray-300 text-xl">Shaolin Temple</router-link>
+        <router-link @click="closeMenu" to="/storia" class="hover:text-gray-300 text-xl">Storia Generale</router-link>
+        <router-link @click="closeMenu" to="/storia/wingchun" class="hover:text-gray-300 text-xl">WingChun</router-link>
+        <router-link @click="closeMenu" to="/storia/ctd" class="hover:text-gray-300 text-xl">CTD</router-link>
+        <router-link @click="closeMenu" to="/storia/gm-william-cheung" class="hover:text-gray-300 text-xl"
+          >GM William Cheung</router-link
+        >
+        <router-link @click="closeMenu" to="/storia/shaolin-temple" class="hover:text-gray-300 text-xl"
+          >Shaolin Temple</router-link
+        >
       </div>
     </div>
 
@@ -225,18 +233,20 @@
     <div class="relative">
       <button @click="toggleDropdown('le-nostre-scuole')" class="hover:text-gray-300 text-xl">Le Nostre Scuole</button>
       <div v-show="dropdowns['le-nostre-scuole']" class="space-y-2 pl-4 flex-col">
-        <router-link to="/le-nostre-scuole" class="hover:text-gray-300 text-xl">Le Nostre Scuole</router-link>
-        <router-link to="/le-nostre-scuole/scuole-riconosciute" class="hover:text-gray-300 text-xl"
+        <router-link @click="closeMenu" to="/le-nostre-scuole" class="hover:text-gray-300 text-xl"
+          >Le Nostre Scuole</router-link
+        >
+        <router-link @click="closeMenu" to="/le-nostre-scuole/scuole-riconosciute" class="hover:text-gray-300 text-xl"
           >Scuole Riconosciute</router-link
         >
-        <router-link to="/le-nostre-scuole/sifu-loris-vincenzi" class="hover:text-gray-300 text-xl"
+        <router-link @click="closeMenu" to="/le-nostre-scuole/sifu-loris-vincenzi" class="hover:text-gray-300 text-xl"
           >Sifu Loris Vincenzi</router-link
         >
       </div>
     </div>
 
-    <router-link to="/blog" class="hover:text-gray-300 text-xl">Blog</router-link>
-    <router-link to="/contact" class="hover:text-gray-300 text-xl">Contatti</router-link>
+    <router-link @click="closeMenu" to="/blog" class="hover:text-gray-300 text-xl">Blog</router-link>
+    <router-link @click="closeMenu" to="/contact" class="hover:text-gray-300 text-xl">Contatti</router-link>
   </div>
 </template>
 
@@ -256,6 +266,11 @@ let dropdowns = ref({
 // Funzione per alternare lo stato dei dropdown
 function toggleDropdown(menu) {
   dropdowns.value[menu] = !dropdowns.value[menu];
+}
+
+// Funzione per chiudere il menu mobile
+function closeMenu() {
+  open.value = false;
 }
 </script>
 
