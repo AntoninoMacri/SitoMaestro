@@ -8,18 +8,57 @@
         <div class="text-left">
           <div class="text-lg text-gray-700 space-y-6">
             <h1 class="text-red-600 font-bold text-5xl">C.T.D. (Cheung’s Tactical Defense)</h1>
+            <p>Il corso C.T.D. va a completare in maniera molto efficace il nostro Wing Chun Tradizionale.</p>
+            <p>
+              Il corso C.T.D. è strutturato nei seguenti livelli che dovranno essere conseguiti con esami e prove
+              specifiche:
+            </p>
 
-            <h2 class="text-black font-bold text-2xl">Difesa personale</h2>
+            <h3 class="text-black font-bold text-2xl">PROGETTO ALPHA</h3>
             <p>
-              <strong
-                >Queste lezioni sono rivolte ad allievi dopo qualche anno di pratica (superato l'esame di 5° livello)
-              </strong>
+              <strong>LIVELLO ALPHA 1:</strong> conoscenza e pratica di tutte le tecniche di difesa a mani nude (i
+              praticanti del corso Wing Chun inizieranno dal livello Alpha 2);
             </p>
             <p>
-              Si andrà a studiare ed applicare le forme avanzate del sistema e il Wooden Dummy (Tecniche dell'Uomo di
-              legno applicato)
+              <strong>LIVELLO ALPHA 2:</strong> conoscenza e pratica di tecniche di Leva e Presa, indispensabili per il
+              disarmo da armi (bastone, coltello, ecc….);
             </p>
-            <p>Inoltre si studierà tutto quello che riguarda il Chi Sao Avanzato con applicazioni al combattimento.</p>
+            <p>
+              <strong>LIVELLO ALPHA 3:</strong> conoscenza e pratica delle principali tecniche di difesa da Bastone,
+              Coltello, sviluppo e perfezionamento dei livelli Alpha 1, Alpha 2, lotta a terra.
+            </p>
+
+            <h3 class="text-black font-bold text-2xl">PROGETTO BRAVO</h3>
+            <p>
+              <strong>LIVELLO BRAVO 1:</strong> conoscenza e pratica di tutte le tecniche di uso e difesa da bastone:
+              mani nude contro bastone e Bastone contro Bastone. Tecniche di Escrima Serrada;
+            </p>
+            <p>
+              <strong>LIVELLO BRAVO 2:</strong> conoscenza e pratica di tutte le tecniche di uso e difesa da coltello:
+              mani nude contro coltello, uso del coltello con impugnatura classica e reverse, coltello contro coltello;
+            </p>
+            <p>
+              <strong>LIVELLO BRAVO 3:</strong> conoscenza e pratica dell’uso del PR-24 – BR-103. Sviluppo e
+              perfezionamento dei livelli Bravo 1, Bravo 2. Difesa da più avversari armati.
+            </p>
+            <h3 class="text-black font-bold text-2xl">PROGETTO CHARLIE</h3>
+            <p>
+              <strong>LIVELLO CHARLIE 1:</strong> conoscenza e pratica del Bastone Telescopico. Uso e maneggio base
+              della Pistola. Conoscenza e pratica delle tecniche di disarmo da Pistola e Fucile. Sviluppo e pratica dei
+              livelli Alpha e Bravo;
+            </p>
+            <p>
+              <strong>LIVELLO CHARLIE 2:</strong> programma fisico medio. Tecniche di difesa letali. Resistenza al
+              dolore;
+            </p>
+            <p>
+              <strong>LIVELLO CHARLIE 2:</strong> programma fisico intenso. Resistenza al dolore e condizionamento
+              psicologico. Valutazione rischi e minacce. Operazioni tecnico tattiche militari.
+            </p>
+
+            <p>
+              <strong>Ti aspetto per la tua lezione di prova gratuita</strong>
+            </p>
           </div>
         </div>
       </div>
@@ -28,13 +67,14 @@
       <div class="w-full md:w-1/3">
         <img
           :src="imageSrc"
-          alt="Sifu Luca Campiglio che si allena con l'uomo di legno"
+          alt="Tecnica di leva al gomito del corso C.T.D."
           class="w-full rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105 md:max-h-90 object-cover"
           @click="openLightbox"
         />
         <!-- Nota sotto l'immagine -->
-        <p class="text-center text-gray-600 mt-4">Sifu Luca Campiglio - Forma Coltelli a farfalla</p>
+        <p class="text-center text-gray-600 mt-4">Tecnica di leva al gomito del corso C.T.D.</p>
       </div>
+      <!-- Immagine con Lightbox (a destra su desktop, sopra su mobile) -->
     </section>
 
     <!-- Lightbox -->
@@ -50,7 +90,7 @@
 
 <script setup>
 import { ref, computed } from "vue";
-import imagePath from "../../assets/Sifu Luca Campiglio - Forma Coltelli a farfalla.jpg"; // Import dell'immagine
+import imagePath from "../../assets/CTD1.jpg"; // Import dell'immagine
 
 const isLightboxOpen = ref(false);
 const imageSrc = ref(imagePath); // Usa l'import invece del percorso stringa
