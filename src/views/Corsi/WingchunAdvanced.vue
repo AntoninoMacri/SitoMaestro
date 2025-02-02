@@ -1,29 +1,75 @@
 <template>
-  <div class="page-container">
-    <h1>Nome della Pagina</h1>
-    <p>Benvenuto sulla pagina di {{ pageName }}. Qui andranno i contenuti.</p>
+  <div class="bg-gray-100 min-h-screen flex flex-col">
+    <!-- Sezione Benvenuto -->
+    <section class="max-w-7xl mx-auto p-8 flex flex-col md:flex-row justify-between items-start gap-y-6 md:gap-x-8">
+      <!-- Contenuto Testuale e News (a sinistra su desktop, sopra su mobile) -->
+      <div class="w-full md:w-2/3 flex flex-col gap-8">
+        <!-- Testo -->
+        <div class="text-left">
+          <div class="text-lg text-gray-700 space-y-6">
+            <h1 class="text-red-600 font-bold text-5xl">WING Chung Advanced</h1>
+
+            <h2 class="text-black font-bold text-2xl">Corso Avanzato Applicativo</h2>
+            <p>
+              <strong
+                >Queste lezioni sono rivolte ad allievi dopo qualche anno di pratica (Richide il superamento dell'esame
+                di 5° livello)
+              </strong>
+            </p>
+            <p>
+              Si andrà a studiare ed applicare le forme avanzate del sistema e il Wooden Dummy (Tecniche dell'Uomo di
+              legno applicato)
+            </p>
+            <p>Inoltre si studierà tutto quello che riguarda il Chi Sao Avanzato con applicazioni al combattimento.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Immagine con Lightbox (a destra su desktop, sopra su mobile) -->
+      <div class="w-full md:w-1/3">
+        <img
+          :src="imageSrc"
+          alt="Sifu Luca Campiglio che si allena con l'uomo di legno"
+          class="w-full rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105 md:max-h-90 object-cover"
+          @click="openLightbox"
+        />
+        <!-- Nota sotto l'immagine -->
+        <p class="text-center text-gray-600 mt-4">Sifu Luca Campiglio - Forma Coltelli a farfalla</p>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div
+      v-if="isLightboxOpen"
+      class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center"
+      @click="closeLightbox"
+    >
+      <img :src="imageSrc" alt="Immagine Lightbox" class="max-w-full max-h-full rounded-lg shadow-lg" />
+    </div>
   </div>
 </template>
 
-<script setup lang="ts">
-// Definisci le proprietà della pagina se necessario
-import { ref } from "vue";
+<script setup>
+import { ref, computed } from "vue";
+import imagePath from "../../assets/Sifu Luca Campiglio - Forma Coltelli a farfalla.jpg"; // Import dell'immagine
 
-const pageName = ref("NomePagina"); // Puoi cambiare questo valore in base alla pagina
+const isLightboxOpen = ref(false);
+const imageSrc = ref(imagePath); // Usa l'import invece del percorso stringa
+
+const openLightbox = () => {
+  isLightboxOpen.value = true;
+};
+
+const closeLightbox = () => {
+  isLightboxOpen.value = false;
+};
+
+// Computed property per determinare l'ordine della sezione News su mobile
+const newsOrderClass = computed(() => {
+  return window.innerWidth < 768 ? "order-last" : ""; // Sposta la sezione News sotto l'immagine su schermi piccoli
+});
 </script>
 
 <style scoped>
-.page-container {
-  padding: 20px;
-}
-
-h1 {
-  font-size: 2rem;
-  color: #333;
-}
-
-p {
-  font-size: 1rem;
-  color: #666;
-}
+/* Nessuna modifica necessaria qui, solo assicurati che l'elemento principale abbia la struttura flex */
 </style>

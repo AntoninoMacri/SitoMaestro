@@ -5,11 +5,14 @@ import Home from "../views/Home.vue";
 
 //Importi Corsi
 import TuttiICorsi from "../views/Corsi/TuttiICorsi.vue";
+import Wingchun from "../views/Corsi/Wingchun.vue";
+import WingchunAdvanced from "../views/Corsi/WingchunAdvanced.vue";
+import CTD from "../views/Corsi/CTD.vue";
 
 // Storia e sottosezioni
 import Storia from "../views/Storia/Storia.vue";
 import WingChun from "../views/Storia/WingChun.vue";
-import CTD from "../views/Storia/CTD.vue";
+import CTDStoria from "../views/Storia/CTDStoria.vue";
 import GMWilliamCheung from "../views/Storia/GMWilliamCheung.vue";
 import ShaolinTemple from "../views/Storia/ShaolinTemple.vue";
 import YipMan from "../views/Storia/YipMan.vue";
@@ -40,7 +43,7 @@ const routes = [
   { path: "/", name: "Home", component: Home },
   { path: "/storia", name: "Storia", component: Storia },
   { path: "/storia/wingchun", name: "WingChun", component: WingChun },
-  { path: "/storia/ctd", name: "CTD", component: CTD },
+  { path: "/storia/ctdStoria", name: "ctdStoria", component: CTDStoria },
   { path: "/storia/gm-william-cheung", name: "GMWilliamCheung", component: GMWilliamCheung },
   { path: "/storia/shaolin-temple", name: "ShaolinTemple", component: ShaolinTemple },
   { path: "/storia/yip-man", name: "YipMan", component: YipMan },
@@ -55,6 +58,9 @@ const routes = [
   { path: "/storia/bruce-lee/lettera-5", name: "Lettera5", component: Lettera5 },
 
   { path: "/corsi/tutti i corsi", name: "Tutti i corsi", component: TuttiICorsi },
+  { path: "/corsi/Wingchun", name: "Wingchun", component: Wingchun },
+  { path: "/corsi/WingchunAdvanced", name: "WingchunAdvanced", component: WingchunAdvanced },
+  { path: "/corsi/CTD", name: "CTD", component: CTD },
 
   { path: "/le-nostre-scuole", name: "LeNostreScuole", component: LeNostreScuole },
   { path: "/le-nostre-scuole/scuole-riconosciute", name: "ScuoleRiconosciute", component: ScuoleRiconosciute },

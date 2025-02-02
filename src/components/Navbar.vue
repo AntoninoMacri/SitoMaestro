@@ -47,8 +47,8 @@
           </li>
           <li>
             <router-link
-              v-if="$route.path !== '/corsi/wingchun-advanced'"
-              to="/corsi/wingchun-advanced"
+              v-if="$route.path !== '/corsi/wingchunadvanced'"
+              to="/corsi/wingchunadvanced"
               class="block px-4 py-2 text-xl hover:bg-gray-600"
               >Wing Chun Advanced</router-link
             >
@@ -206,7 +206,7 @@
           >Tutti i corsi</router-link
         >
         <router-link @click="closeMenu" to="/corsi/wingchun" class="hover:text-gray-300 text-xl">Wing Chun</router-link>
-        <router-link @click="closeMenu" to="/corsi/wingchun-advanced" class="hover:text-gray-300 text-xl"
+        <router-link @click="closeMenu" to="/corsi/wingchunadvanced" class="hover:text-gray-300 text-xl"
           >Wing Chun Advanced</router-link
         >
         <router-link @click="closeMenu" to="/corsi/ctd" class="hover:text-gray-300 text-xl">C.T.D.</router-link>
