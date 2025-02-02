@@ -7,23 +7,25 @@
         <!-- Testo -->
         <div class="text-left">
           <div class="text-lg text-gray-700 space-y-6">
-            <h1 class="text-red-600 font-bold text-3xl">GIORNI E ORARI DEI CORSI DI WING CHUN</h1>
+            <h1 class="text-red-600 font-bold text-5xl">LUOGHI E ORARI</h1>
 
-            <p class="text-red-600 font-bold text-2xl">LEGNAGO (Verona)</p>
+            <h2 class="text-red-600 font-bold text-3xl">CORSI WING CHUN BASE</h2>
+
+            <p class="text-black font-bold text-2xl">LEGNAGO (Verona)</p>
             <p>Via Leopardi, 3 – Scuole Elementari G. Cotta</p>
             <p>Martedì e Giovedì dalle ore 19.00 alle ore 20.00 – Inizio del corso Martedì 08 Ottobre 2024</p>
 
             <!-- Sezione "A chi mi rivolgo" -->
-            <p class="text-red-600 font-bold text-2xl">BORGO SAN MARCO – MONTAGNANA (Padova)</p>
+            <p class="text-black font-bold text-2xl">BORGO SAN MARCO – MONTAGNANA (Padova)</p>
             <p>Scuole Elementari via Arzarin, 2</p>
             <p>Lunedì dalle ore 18.45 alle ore 19.45 – Inizio del corso Lunedì 07 Ottobre 2024</p>
 
             <!-- Sezione "Perchè i miei corsi" -->
-            <p class="text-red-600 font-bold text-2xl">ZEVIO (Verona)</p>
+            <p class="text-black font-bold text-2xl">ZEVIO (Verona)</p>
             <p>Via Altichiero, 21 – Scuole Medie</p>
             <p>Venerdì dalle ore 18.30 alle ore 19.30 – Inizio del corso Venerdì 04 Ottobre 2024</p>
 
-            <p class="text-red-600 font-bold text-2xl">CORSI WING CHUN ADVANCED E CTD</p>
+            <h2 class="text-red-600 font-bold text-3xl">CORSI WING CHUN ADVANCED E C.T.D.</h2>
             <p>LEGNAGO (Verona)</p>
             <p>Via Leopardi, 3 – Scuole Elementari G. Cotta</p>
             <p>Sabato dalle ore 16.00 alle ore 17.30</p>
