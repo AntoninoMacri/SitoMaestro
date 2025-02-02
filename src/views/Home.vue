@@ -48,12 +48,12 @@
       <div class="w-full md:w-1/3">
         <img
           :src="imageSrc"
-          alt="Sifu Luca Campiglio che si allena contro l'uomo di legno"
+          alt="Sifu Luca Campiglio che si allena con l'uomo di legno"
           class="w-full rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105 md:max-h-90 object-cover"
           @click="openLightbox"
         />
         <!-- Nota sotto l'immagine -->
-        <p class="text-center text-gray-600 mt-4">Sifu Luca Campiglio allenamento con l'uomo di legno</p>
+        <p class="text-center text-gray-600 mt-4">Sifu Luca Campiglio</p>
       </div>
     </section>
 
