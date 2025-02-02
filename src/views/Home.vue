@@ -21,7 +21,7 @@
             <p class="text-red-600 font-bold text-2xl">A chi mi rivolgo</p>
             <p>
               Ai miei corsi sono benvenute tutte le persone che desiderano avvicinarsi a questa fantastica arte marziale
-              inventata da una “monaca”.
+              inventata da una “monaca””.
             </p>
 
             <!-- Sezione "Perchè i miei corsi" -->
@@ -30,6 +30,16 @@
               Sono sempre attento a proporre ai miei allievi varie strategie di allenamento e organizzo Stage nazionali
               e internazionali con grandi maestri presso le nostre palestre.
             </p>
+
+            <!-- Bottone "Voglio provare" -->
+            <div class="mt-6 flex justify-start">
+              <router-link
+                to="/le-nostre-scuole"
+                class="inline-block px-6 py-3 bg-red-600 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-red-700 transition-colors duration-300"
+              >
+                Voglio provare
+              </router-link>
+            </div>
           </div>
         </div>
       </div>
