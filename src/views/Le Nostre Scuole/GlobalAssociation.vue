@@ -7,20 +7,23 @@
         <!-- Testo -->
         <div class="text-left">
           <div class="text-lg text-gray-700 space-y-6">
-            <h1 class="text-red-600 font-bold text-5xl">WING Chung Advanced</h1>
-
-            <h2 class="text-black font-bold text-2xl">Corso Avanzato Applicativo</h2>
+            <h1 class="text-red-600 font-bold text-5xl">The Global Traditional Wing Chun Kung Fu Association</h1>
             <p>
-              <strong
-                >Queste lezioni sono rivolte ad allievi dopo qualche anno di pratica (Richide il superamento dell'esame
-                di 5° livello)
-              </strong>
+              La <strong>CTD Wing Chun Academy </strong> insegna in Italia ed è Responsabile per l’Europa, riconosciuta
+              dalla <strong>The Global Traditional Wing Chun Kung Fu Association</strong> che divulga il nostro Wing
+              Chun in tutto il mondo.
             </p>
             <p>
-              Si andrà a studiare ed applicare le forme avanzate del sistema e il Wooden Dummy (Tecniche dell'Uomo di
-              legno applicato)
+              La CTD Wing Chun Academy tutela e garantisce il livello tecnico e gli standard di esperienza dei singoli
+              istruttori tramite un percorso di insegnamento continuo. Ogni istruttore deve essere abilitato
+              all’insegnamento dalla suddetta organizzazione tramite certificato di insegnamento rilasciato a seguito di
+              un esame.
             </p>
-            <p>Inoltre si studierà tutto quello che riguarda il Chi Sao Avanzato con applicazioni al combattimento.</p>
+            <p class="text-black font-bold text-2xl">Master Luca Campiglio</p>
+            <p><strong>Dove:</strong> Legnago (VR) – Zevio (VR) Montagnana (PD)</p>
+            <p class="text-black font-bold text-2xl">Sifu Loris Vincenzi</p>
+            <p><strong>Dove:</strong> Trevenzuolo (VR)</p>
+            <p>Scuola riconosciute dalla CTD Wing Chun Academy</p>
           </div>
         </div>
       </div>
@@ -34,7 +37,7 @@
           @click="openLightbox"
         />
         <!-- Nota sotto l'immagine -->
-        <p class="text-center text-gray-600 mt-4">Sifu Luca Campiglio - Forma Coltelli a farfalla</p>
+        <p class="text-center text-gray-600 mt-4">Sifu Luca Campiglio e il Grande Maestro William Cheung</p>
       </div>
     </section>
 
@@ -51,7 +54,7 @@
 
 <script setup>
 import { ref, computed } from "vue";
-import imagePath from "../../assets/Sifu Luca Campiglio - Forma Coltelli a farfalla.jpg"; // Import dell'immagine
+import imagePath from "../../assets/SifuLuca-GranMasterCheung.jpeg"; // Import dell'immagine
 
 const isLightboxOpen = ref(false);
 const imageSrc = ref(imagePath); // Usa l'import invece del percorso stringa

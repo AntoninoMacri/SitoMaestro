@@ -16,7 +16,7 @@ import CTDStoria from "../views/Storia/CTDStoria.vue";
 import GMWilliamCheung from "../views/Storia/GMWilliamCheung.vue";
 import ShaolinTemple from "../views/Storia/ShaolinTemple.vue";
 import YipMan from "../views/Storia/YipMan.vue";
-import MasterLucaCampiglio from "../views/Storia/MasterLucaCampiglio.vue";
+import MasterLucaCampiglioStoria from "../views/Storia/MasterLucaCampiglioStoria.vue";
 import CopertineRiviste from "../views/Storia/CopertineRiviste.vue";
 
 // Bruce Lee e Lettere
@@ -31,6 +31,8 @@ import Lettera5 from "../views/Storia/Bruce Lee/Lettera5.vue";
 import LeNostreScuole from "../views/Le Nostre Scuole/ScuoleRiconosciute.vue";
 import ScuoleRiconosciute from "../views/Le Nostre Scuole/ScuoleRiconosciute.vue";
 import SifuLorisVincenzi from "../views/Le Nostre Scuole/SifuLorisVincenzi.vue";
+import GlobalAssociation from "../views/Le Nostre Scuole/GlobalAssociation.vue";
+import MasterLucaCampiglio from "../views/Le Nostre Scuole/MasterLucaCampiglio.vue";
 
 // Blog
 import Blog from "../views/Blog/Blog.vue";
@@ -47,7 +49,7 @@ const routes = [
   { path: "/storia/gm-william-cheung", name: "GMWilliamCheung", component: GMWilliamCheung },
   { path: "/storia/shaolin-temple", name: "ShaolinTemple", component: ShaolinTemple },
   { path: "/storia/yip-man", name: "YipMan", component: YipMan },
-  { path: "/storia/master-luca-campiglio", name: "MasterLucaCampiglio", component: MasterLucaCampiglio },
+  { path: "/storia/master-luca-campiglio", name: "MasterLucaCampiglio", component: MasterLucaCampiglioStoria },
   { path: "/storia/copertine-riviste", name: "CopertineRiviste", component: CopertineRiviste },
 
   { path: "/storia/bruce-lee", name: "BruceLee", component: BruceLee },
@@ -62,9 +64,11 @@ const routes = [
   { path: "/corsi/WingchunAdvanced", name: "WingchunAdvanced", component: WingchunAdvanced },
   { path: "/corsi/CTD", name: "CTD", component: CTD },
 
-  { path: "/le-nostre-scuole", name: "LeNostreScuole", component: LeNostreScuole },
+  { path: "/le-nostre-scuole", name: "CTD Wing Chun Academy", component: LeNostreScuole },
+  { path: "/le-nostre-scuole/GlobalAssociation", name: "GlobalAssociation", component: GlobalAssociation },
   { path: "/le-nostre-scuole/scuole-riconosciute", name: "ScuoleRiconosciute", component: ScuoleRiconosciute },
   { path: "/le-nostre-scuole/sifu-loris-vincenzi", name: "SifuLorisVincenzi", component: SifuLorisVincenzi },
+  { path: "/le-nostre-scuole/MasterLucaCampiglio", name: "MasterLucaCampiglio", component: MasterLucaCampiglio },
 
   { path: "/blog", name: "Blog", component: Blog },
   { path: "/blog/video", name: "Video", component: Video },

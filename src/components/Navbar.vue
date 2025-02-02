@@ -125,21 +125,21 @@
         >
           <li>
             <router-link
-              v-if="$route.path !== '/le-nostre-scuole'"
-              to="/le-nostre-scuole"
+              v-if="$route.path !== '/le-nostre-scuole/GlobalAssociation'"
+              to="/le-nostre-scuole/GlobalAssociation"
               class="block px-4 py-2 text-xl hover:bg-gray-600"
-              >Le Nostre Scuole</router-link
+              >Global Association</router-link
             >
-            <span v-else class="block px-4 py-2 text-xl">Le Nostre Scuole</span>
+            <span v-else class="block px-4 py-2 text-xl">Global Association</span>
           </li>
           <li>
             <router-link
-              v-if="$route.path !== '/le-nostre-scuole/scuole-riconosciute'"
-              to="/le-nostre-scuole/scuole-riconosciute"
+              v-if="$route.path !== '/le-nostre-scuole/MasterLucaCampiglio'"
+              to="/le-nostre-scuole/MasterLucaCampiglio"
               class="block px-4 py-2 text-xl hover:bg-gray-600"
-              >Scuole Riconosciute</router-link
+              >Master Luca Campiglio</router-link
             >
-            <span v-else class="block px-4 py-2 text-xl">Scuole Riconosciute</span>
+            <span v-else class="block px-4 py-2 text-xl">Master Luca Campiglio</span>
           </li>
           <li>
             <router-link
