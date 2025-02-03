@@ -108,12 +108,6 @@
           class="absolute left-0 mt-2 w-40 bg-black text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 flex-col"
         >
           <li>
-            <router-link v-if="$route.path !== '/storia'" to="/storia" class="block px-4 py-2 text-xl hover:bg-gray-600"
-              >Storia Generale</router-link
-            >
-            <span v-else class="block px-4 py-2 text-xl">Storia Generale</span>
-          </li>
-          <li>
             <router-link
               v-if="$route.path !== '/storia/WingChun'"
               to="/storia/WingChun"
