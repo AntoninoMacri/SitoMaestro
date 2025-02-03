@@ -63,7 +63,7 @@
 
 <script setup>
 import { ref } from "vue";
-import videoPath from "../../assets/CORSI-2023-24.mov"; // Import del video
+import videoPath from "../../assets/CORSI-2023-24.mp4"; // Import del video
 
 const isLightboxOpen = ref(false);
 const videoSrc = ref(videoPath);
