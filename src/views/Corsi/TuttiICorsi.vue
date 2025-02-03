@@ -44,9 +44,10 @@
       <div class="w-full md:w-2/3">
         <!-- Immagine -->
         <img
-          src="../../assets/Eami1.jpg"
+          :src="imageSrc"
           alt="Caratteri cinesi di Wing Chun"
-          class="w-full rounded-lg shadow-lg mb-4"
+          class="w-full rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105 md:max-h-90 object-cover mb-4"
+          @click="openLightbox"
         />
 
         <!-- Video -->
@@ -73,6 +74,9 @@
 <script setup>
 import { ref } from "vue";
 import videoPath from "../../assets/CORSI-2023-24.mp4"; // Import del video
+
+import imagePath from "../../assets/Eami1.jpg"; // Import dell'immagine
+const imageSrc = ref(imagePath);
 
 const isLightboxOpen = ref(false);
 const videoSrc = ref(videoPath);
