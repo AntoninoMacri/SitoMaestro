@@ -115,8 +115,8 @@
           </li>
           <li>
             <router-link
-              v-if="$route.path !== '/storia/wingchun'"
-              to="/storia/wingchun"
+              v-if="$route.path !== '/storia/WingChun'"
+              to="/storia/WingChun"
               class="block px-4 py-2 text-xl hover:bg-gray-600"
               >WingChun</router-link
             >
@@ -233,7 +233,7 @@
         <button @click="toggleDropdown('storia')" class="hover:text-gray-300 text-xl">Storia</button>
         <div v-show="dropdowns.storia" class="space-y-2 pl-4 flex-col">
           <router-link @click="closeMenu" to="/storia" class="hover:text-gray-300 text-xl">Storia Generale</router-link>
-          <router-link @click="closeMenu" to="/storia/wingchun" class="hover:text-gray-300 text-xl"
+          <router-link @click="closeMenu" to="/storia/WingChun" class="hover:text-gray-300 text-xl"
             >WingChun</router-link
           >
           <router-link @click="closeMenu" to="/storia/ctd" class="hover:text-gray-300 text-xl">CTD</router-link>
