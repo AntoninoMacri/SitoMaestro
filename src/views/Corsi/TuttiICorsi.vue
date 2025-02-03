@@ -42,9 +42,18 @@
 
       <!-- Video -->
       <div class="w-full md:w-2/3">
+        <!-- Immagine -->
+        <img
+          src="../../assets/Eami1.jpg"
+          alt="Caratteri cinesi di Wing Chun"
+          class="w-full rounded-lg shadow-lg mb-4"
+        />
+
+        <!-- Video -->
         <video :src="videoSrc" class="w-full rounded-lg shadow-lg" controls loop>
           Il tuo browser non supporta il tag video.
         </video>
+
         <!-- Nota sotto il video -->
         <p class="text-center text-gray-600 mt-4">CORSI-2023-24</p>
       </div>

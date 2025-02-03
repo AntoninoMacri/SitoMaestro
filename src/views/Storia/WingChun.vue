@@ -94,9 +94,11 @@
         to="/corsi/tutti i corsi"
         class="inline-block px-6 py-3 bg-red-600 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-red-700 transition-colors duration-300"
       >
-        Voglio provare
+        Fammi conoscere le palestre
       </router-link>
     </div>
+
+    <p class="text-center text-gray-600 mt-4">Capitolo origini e Trascrizione da tuttocina.it</p>
   </div>
 </template>
 
