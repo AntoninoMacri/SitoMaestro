@@ -21,7 +21,7 @@
             <p class="text-red-600 font-bold text-2xl">A chi mi rivolgo</p>
             <p>
               Ai miei corsi sono benvenute tutte le persone che desiderano avvicinarsi a questa fantastica arte marziale
-              inventata da una “monaca””.
+              inventata dalla monaca Ng Mui.
             </p>
 
             <!-- Sezione "Perchè i miei corsi" -->

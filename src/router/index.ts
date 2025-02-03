@@ -42,6 +42,7 @@ import Articoli from "../views/Blog/Articoli.vue";
 
 // Definisci le rotte
 const routes = [
+  { path: "/SitoMaestroPage/", name: "Home", component: Home },
   { path: "/", name: "Home", component: Home },
   { path: "/storia", name: "Storia", component: Storia },
   { path: "/storia/wingchun", name: "WingChun", component: WingChun },
