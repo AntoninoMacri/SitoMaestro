@@ -18,14 +18,6 @@
       Shaolin di Dengfeng"
       class="w-full max-w-xs mx-auto rounded-lg shadow-lg object-contain"
     />
-    <p>
-      Nel 1959 parte per l’Australia onde poter proseguire i suoi studi universitari. Nel 1974 fonda la World Wing Chun
-      Kung Fu Association ed inizia ad insegnare professionalmente Wing Chun. Dal 1978 al 1980 è nominato
-      capo-istruttore per i combattimenti disarmati presso la Settima Flotta della U.S. Marines a Yokosuka, Giappone.
-      Inizia poi a diffondere la sua scuola in tutto il mondo, compare sulle copertine delle più importanti riviste
-      specializzate internazionali, partecipa a numerosi talk-show televisivi e rilascia numerose interviste
-      radiofoniche.
-    </p>
 
     <img
       src="../../assets/steledimarmoLuca.jpg"
