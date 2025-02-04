@@ -154,12 +154,12 @@
           </li>
           <li>
             <router-link
-              v-if="$route.path !== '/storia/shaolin-temple'"
-              to="/storia/shaolin-temple"
+              v-if="$route.path !== '/storia/bruce-lee'"
+              to="/storia/bruce-lee"
               class="block px-4 py-2 text-xl hover:bg-gray-600"
-              >Shaolin Temple</router-link
+              >Bruce Lee</router-link
             >
-            <span v-else class="block px-4 py-2 text-xl">Shaolin Temple</span>
+            <span v-else class="block px-4 py-2 text-xl">Bruce Lee</span>
           </li>
           <li>
             <router-link

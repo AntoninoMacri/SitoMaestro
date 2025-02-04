@@ -20,12 +20,7 @@ import MasterLucaCampiglioStoria from "../views/Storia/MasterLucaCampiglioStoria
 import CopertineRiviste from "../views/Storia/CopertineRiviste.vue";
 
 // Bruce Lee e Lettere
-import BruceLee from "../views/Storia/Bruce Lee/Bruce-Lee.vue";
-import Lettera1 from "../views/Storia/Bruce Lee/Lettera1.vue";
-import Lettera2 from "../views/Storia/Bruce Lee/Lettera2.vue";
-import Lettera3 from "../views/Storia/Bruce Lee/Lettera3.vue";
-import Lettera4 from "../views/Storia/Bruce Lee/Lettera4.vue";
-import Lettera5 from "../views/Storia/Bruce Lee/Lettera5.vue";
+import BruceLee from "../views/Storia/Bruce-Lee.vue";
 
 // Le Nostre Scuole
 import LeNostreScuole from "../views/Le Nostre Scuole/ScuoleRiconosciute.vue";
@@ -54,11 +49,6 @@ const routes = [
   { path: "/storia/copertine-riviste", name: "CopertineRiviste", component: CopertineRiviste },
 
   { path: "/storia/bruce-lee", name: "BruceLee", component: BruceLee },
-  { path: "/storia/bruce-lee/lettera-1", name: "Lettera1", component: Lettera1 },
-  { path: "/storia/bruce-lee/lettera-2", name: "Lettera2", component: Lettera2 },
-  { path: "/storia/bruce-lee/lettera-3", name: "Lettera3", component: Lettera3 },
-  { path: "/storia/bruce-lee/lettera-4", name: "Lettera4", component: Lettera4 },
-  { path: "/storia/bruce-lee/lettera-5", name: "Lettera5", component: Lettera5 },
 
   { path: "/corsi/tutti i corsi", name: "Tutti i corsi", component: TuttiICorsi },
   { path: "/corsi/Wingchun", name: "Wingchun", component: Wingchun },
