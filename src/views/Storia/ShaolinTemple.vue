@@ -1,29 +1,44 @@
 <template>
-  <div class="page-container">
-    <h1>Nome della Pagina</h1>
-    <p>Benvenuto sulla pagina di {{ pageName }}. Qui andranno i contenuti.</p>
+  <div class="max-w-4xl mx-auto p-6 text-gray-700 space-y-6">
+    <!-- Titolo principale -->
+    <h1 class="text-red-600 font-bold text-3xl text-center">Shaolin Temple (Tempio Shaolin)</h1>
+
+    <!-- Sezione: Origini -->
+    <h2 class="text-red-600 font-bold text-2xl">Stele di Marmo</h2>
+    <p>
+      La stele di marmo con i nomi dei maestri della Scuola William Cheung eretta nel 2013 all’interno del Tempio di
+      Shaolin di Dengfeng. Accanto e nelle vicinanze altri steli di marmo, rappresentative di altre scuole storiche di
+      kung fu, esistono da secoli. Personalmente sono molto onorato per aver visto inciso anche il mio nome accanto a
+      tutti gli altri tra cui spiccano nomi famosi, oltre a quello di Grandmaster, come MikeTyson, Steve Wonder e Robert
+      Dawney Junior. Ancora grazie al mio Sifu William Cheung e alla Global Tradional Wing Chun Kung Fu Association.
+    </p>
+    <img
+      src="../../assets/steledimarmo.jpg"
+      alt="Foto della stele di marmo con i nomi dei maestri della Scuola William Cheung eretta nel 2013 all’interno del Tempio di
+      Shaolin di Dengfeng"
+      class="w-full max-w-xs mx-auto rounded-lg shadow-lg object-contain"
+    />
+    <p>
+      Nel 1959 parte per l’Australia onde poter proseguire i suoi studi universitari. Nel 1974 fonda la World Wing Chun
+      Kung Fu Association ed inizia ad insegnare professionalmente Wing Chun. Dal 1978 al 1980 è nominato
+      capo-istruttore per i combattimenti disarmati presso la Settima Flotta della U.S. Marines a Yokosuka, Giappone.
+      Inizia poi a diffondere la sua scuola in tutto il mondo, compare sulle copertine delle più importanti riviste
+      specializzate internazionali, partecipa a numerosi talk-show televisivi e rilascia numerose interviste
+      radiofoniche.
+    </p>
+
+    <img
+      src="../../assets/steledimarmoLuca.jpg"
+      alt="Ip Man in allenamento"
+      class="w-full mx-auto rounded-lg shadow-lg object-contain"
+    />
+    <p class="text-center text-gray-600 mt-4">Foto della stele di marmo con focus sul maestro Luca Campiglio</p>
   </div>
 </template>
 
-<script setup lang="ts">
-// Definisci le proprietà della pagina se necessario
-import { ref } from "vue";
-
-const pageName = ref("NomePagina"); // Puoi cambiare questo valore in base alla pagina
+<script>
+export default {
+  name: "StoriaWingChun",
+};
 </script>
-
-<style scoped>
-.page-container {
-  padding: 20px;
-}
-
-h1 {
-  font-size: 2rem;
-  color: #333;
-}
-
-p {
-  font-size: 1rem;
-  color: #666;
-}
-</style>
+9

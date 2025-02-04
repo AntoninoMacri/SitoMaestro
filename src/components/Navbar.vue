@@ -118,12 +118,12 @@
           </li>
           <li>
             <router-link
-              v-if="$route.path !== '/storia/ctd'"
-              to="/storia/ctd"
+              v-if="$route.path !== '/storia/ctdStoria'"
+              to="/storia/ctdStoria"
               class="block px-4 py-2 text-xl hover:bg-gray-600"
               >C.T.D.</router-link
             >
-            <span v-else class="block px-4 py-2 text-xl">CTD</span>
+            <span v-else class="block px-4 py-2 text-xl">C.T.D.</span>
           </li>
           <li>
             <router-link
