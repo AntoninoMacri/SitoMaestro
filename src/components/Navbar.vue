@@ -271,20 +271,34 @@ function closeMenu() {
 </script>
 
 <style scoped>
-/* Gestione dropdown non visibile: nessun evento di puntamento */
-.group ul {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  z-index: 10;
-  position: absolute;
-  pointer-events: none; /* Impedisci l'interazione quando non visibile */
+/* Assicura che il container del pulsante e del menu sia relativo */
+.group {
+  position: relative;
+  display: inline-block;
 }
 
-/* Gestisci l'apertura e la visibilità del menu dropdown */
-.group:hover ul,
-.group:focus-within ul {
+/* Stile del dropdown per evitare spazi vuoti */
+.group ul {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  position: absolute;
+  z-index: 10;
+  visibility: hidden;
+  top: 100%; /* Assicura che il menu sia esattamente sotto il pulsante */
+  left: 0;
+  width: max-content;
+  margin: 0; /* Rimuove margini indesiderati */
+  padding: 0; /* Rimuove padding aggiuntivo */
+}
+
+/* Mantiene il menu aperto quando il mouse è sopra il pulsante o il menu */
+.group:hover > ul,
+.group:focus-within > ul,
+.group ul:hover {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 
 /* Per il menu mobile */
