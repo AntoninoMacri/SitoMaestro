@@ -63,6 +63,15 @@
             >
             <span v-else class="block px-4 py-2 text-xl">C.T.D.</span>
           </li>
+          <li>
+            <router-link
+              v-if="$route.path !== '/corsi/DifficoltaMotoria'"
+              to="/corsi/DifficoltaMotoria"
+              class="block px-4 py-2 text-xl hover:bg-gray-600"
+              >Difficoltà Motoria</router-link
+            >
+            <span v-else class="block px-4 py-2 text-xl">Difficoltà Motoria</span>
+          </li>
         </ul>
       </li>
       <!-- Dropdown Le Nostre Scuole -->
@@ -270,6 +279,9 @@
 
           <router-link @click="closeMenu" to="/storia/Robert-Downey-Jr" class="hover:text-gray-300 text-xl"
             >Robert Downey Jr.</router-link
+          >
+          <router-link @click="closeMenu" to="/corsi/DifficoltaMotoria" class="hover:text-gray-300 text-xl"
+            >Difficoltà Motoria</router-link
           >
         </div>
       </div>

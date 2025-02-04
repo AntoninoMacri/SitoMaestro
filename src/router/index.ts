@@ -8,6 +8,7 @@ import TuttiICorsi from "../views/Corsi/TuttiICorsi.vue";
 import Wingchun from "../views/Corsi/Wingchun.vue";
 import WingchunAdvanced from "../views/Corsi/WingchunAdvanced.vue";
 import CTD from "../views/Corsi/CTD.vue";
+import DifficoltaMotoria from "../views/Corsi/DifficoltaMotoria.vue";
 
 // Storia e sottosezioni
 import Storia from "../views/Storia/Storia.vue";
@@ -51,6 +52,7 @@ const routes = [
   { path: "/corsi/Wingchun", name: "Wingchun", component: Wingchun },
   { path: "/corsi/WingchunAdvanced", name: "WingchunAdvanced", component: WingchunAdvanced },
   { path: "/corsi/CTD", name: "CTD", component: CTD },
+  { path: "/corsi/DifficoltaMotoria", name: "DifficoltaMotoria", component: DifficoltaMotoria },
 
   { path: "/le-nostre-scuole", name: "CTD Wing Chun Academy", component: LeNostreScuole },
   { path: "/le-nostre-scuole/GlobalAssociation", name: "GlobalAssociation", component: GlobalAssociation },
