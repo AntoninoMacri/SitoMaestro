@@ -240,6 +240,9 @@
           >Wing Chun Advanced</router-link
         >
         <router-link @click="closeMenu" to="/corsi/ctd" class="hover:text-gray-300 text-xl">C.T.D.</router-link>
+        <router-link @click="closeMenu" to="/corsi/DifficoltaMotoria" class="hover:text-gray-300 text-xl"
+          >Difficoltà Motoria</router-link
+        >
       </div>
     </div>
 
@@ -279,9 +282,6 @@
 
           <router-link @click="closeMenu" to="/storia/Robert-Downey-Jr" class="hover:text-gray-300 text-xl"
             >Robert Downey Jr.</router-link
-          >
-          <router-link @click="closeMenu" to="/corsi/DifficoltaMotoria" class="hover:text-gray-300 text-xl"
-            >Difficoltà Motoria</router-link
           >
         </div>
       </div>
