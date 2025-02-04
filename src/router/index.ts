@@ -17,7 +17,7 @@ import GMWilliamCheung from "../views/Storia/GMWilliamCheung.vue";
 import ShaolinTemple from "../views/Storia/ShaolinTemple.vue";
 import YipMan from "../views/Storia/YipMan.vue";
 import MasterLucaCampiglioStoria from "../views/Storia/MasterLucaCampiglioStoria.vue";
-import CopertineRiviste from "../views/Storia/CopertineRiviste.vue";
+import RobertDJunior from "../views/Storia/RobertDJunior.vue";
 
 // Bruce Lee e Lettere
 import BruceLee from "../views/Storia/Bruce-Lee.vue";
@@ -46,7 +46,7 @@ const routes = [
   { path: "/storia/shaolin-temple", name: "ShaolinTemple", component: ShaolinTemple },
   { path: "/storia/YipMan", name: "YipMan", component: YipMan },
   { path: "/storia/master-luca-campiglio", name: "MasterLucaCampiglio", component: MasterLucaCampiglioStoria },
-  { path: "/storia/copertine-riviste", name: "CopertineRiviste", component: CopertineRiviste },
+  { path: "/storia/Robert-Downey-Jr", name: "Robert Downey Jr", component: RobertDJunior },
 
   { path: "/storia/bruce-lee", name: "BruceLee", component: BruceLee },
 
