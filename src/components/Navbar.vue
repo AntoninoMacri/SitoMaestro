@@ -173,9 +173,9 @@
         </ul>
       </li>
 
-      <!-- Dropdown Blog -->
+      <!-- Dropdown Foto -->
       <li>
-        <router-link v-if="$route.path !== '/blog'" to="/blog" class="text-white hover:text-gray-300 text-xl"
+        <router-link v-if="$route.path !== '/foto'" to="/foto" class="text-white hover:text-gray-300 text-xl"
           >Foto</router-link
         >
         <span v-else class="text-xl">Foto</span>

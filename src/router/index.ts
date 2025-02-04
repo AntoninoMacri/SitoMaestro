@@ -29,11 +29,8 @@ import SifuLorisVincenzi from "../views/Le Nostre Scuole/SifuLorisVincenzi.vue";
 import GlobalAssociation from "../views/Le Nostre Scuole/GlobalAssociation.vue";
 import MasterLucaCampiglio from "../views/Le Nostre Scuole/MasterLucaCampiglio.vue";
 
-// Blog
-import Blog from "../views/Blog/Blog.vue";
-import Video from "../views/Blog/Video.vue";
-import Foto from "../views/Blog/Foto.vue";
-import Articoli from "../views/Blog/Articoli.vue";
+// Foto
+import Foto from "../views/Foto.vue";
 
 // Definisci le rotte
 const routes = [
@@ -61,10 +58,7 @@ const routes = [
   { path: "/le-nostre-scuole/sifu-loris-vincenzi", name: "SifuLorisVincenzi", component: SifuLorisVincenzi },
   { path: "/le-nostre-scuole/MasterLucaCampiglio", name: "MasterLucaCampiglio", component: MasterLucaCampiglio },
 
-  { path: "/blog", name: "Blog", component: Blog },
-  { path: "/blog/video", name: "Video", component: Video },
-  { path: "/blog/foto", name: "Foto", component: Foto },
-  { path: "/blog/articoli", name: "Articoli", component: Articoli },
+  { path: "/foto", name: "foto", component: Foto },
 ];
 
 // Configurazione del router
