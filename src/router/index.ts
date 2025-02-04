@@ -49,7 +49,7 @@ const routes = [
   { path: "/storia/ctdStoria", name: "ctdStoria", component: CTDStoria },
   { path: "/storia/gm-william-cheung", name: "GMWilliamCheung", component: GMWilliamCheung },
   { path: "/storia/shaolin-temple", name: "ShaolinTemple", component: ShaolinTemple },
-  { path: "/storia/yip-man", name: "YipMan", component: YipMan },
+  { path: "/storia/YipMan", name: "YipMan", component: YipMan },
   { path: "/storia/master-luca-campiglio", name: "MasterLucaCampiglio", component: MasterLucaCampiglioStoria },
   { path: "/storia/copertine-riviste", name: "CopertineRiviste", component: CopertineRiviste },
 

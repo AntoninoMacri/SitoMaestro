@@ -143,6 +143,33 @@
             >
             <span v-else class="block px-4 py-2 text-xl">Shaolin Temple</span>
           </li>
+          <li>
+            <router-link
+              v-if="$route.path !== '/storia/YipMan'"
+              to="/storia/YipMan"
+              class="block px-4 py-2 text-xl hover:bg-gray-600"
+              >Yip Man</router-link
+            >
+            <span v-else class="block px-4 py-2 text-xl">Yip Man</span>
+          </li>
+          <li>
+            <router-link
+              v-if="$route.path !== '/storia/shaolin-temple'"
+              to="/storia/shaolin-temple"
+              class="block px-4 py-2 text-xl hover:bg-gray-600"
+              >Shaolin Temple</router-link
+            >
+            <span v-else class="block px-4 py-2 text-xl">Shaolin Temple</span>
+          </li>
+          <li>
+            <router-link
+              v-if="$route.path !== '/storia/shaolin-temple'"
+              to="/storia/shaolin-temple"
+              class="block px-4 py-2 text-xl hover:bg-gray-600"
+              >Shaolin Temple</router-link
+            >
+            <span v-else class="block px-4 py-2 text-xl">Shaolin Temple</span>
+          </li>
         </ul>
       </li>
 

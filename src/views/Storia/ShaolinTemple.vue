@@ -33,4 +33,3 @@ export default {
   name: "StoriaWingChun",
 };
 </script>
-9
