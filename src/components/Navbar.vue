@@ -183,9 +183,9 @@
 
       <li>
         <router-link v-if="$route.path !== '/contact'" to="/contact" class="text-white hover:text-gray-300 text-xl"
-          >Iscrizione</router-link
+          >Contatti</router-link
         >
-        <span v-else class="text-xl">Iscrizione</span>
+        <span v-else class="text-xl">Contatti</span>
       </li>
     </ul>
     <!-- Mobile menu icon -->
