@@ -253,22 +253,29 @@
       <div class="relative">
         <button @click="toggleDropdown('storia')" class="hover:text-gray-300 text-xl">Storia</button>
         <div v-show="dropdowns.storia" class="space-y-2 pl-4 flex-col">
-          <router-link @click="closeMenu" to="/storia" class="hover:text-gray-300 text-xl">Storia Generale</router-link>
           <router-link @click="closeMenu" to="/storia/WingChun" class="hover:text-gray-300 text-xl"
             >WingChun</router-link
           >
-          <router-link @click="closeMenu" to="/storia/ctd" class="hover:text-gray-300 text-xl">CTD</router-link>
+          <router-link @click="closeMenu" to="/storia/ctd" class="hover:text-gray-300 text-xl">C.T.D.</router-link>
           <router-link @click="closeMenu" to="/storia/gm-william-cheung" class="hover:text-gray-300 text-xl"
             >GM William Cheung</router-link
           >
           <router-link @click="closeMenu" to="/storia/shaolin-temple" class="hover:text-gray-300 text-xl"
             >Shaolin Temple</router-link
           >
+          <router-link @click="closeMenu" to="/storia/YipMan" class="hover:text-gray-300 text-xl">Yip Man</router-link>
+          <router-link @click="closeMenu" to="/storia/bruce-lee" class="hover:text-gray-300 text-xl"
+            >Bruce Lee</router-link
+          >
+
+          <router-link @click="closeMenu" to="/storia/Robert-Downey-Jr" class="hover:text-gray-300 text-xl"
+            >Robert Downey Jr.</router-link
+          >
         </div>
       </div>
     </div>
 
-    <router-link @click="closeMenu" to="/blog" class="hover:text-gray-300 text-xl">Blog</router-link>
+    <router-link @click="closeMenu" to="/foto" class="hover:text-gray-300 text-xl">Foto</router-link>
     <router-link @click="closeMenu" to="/contact" class="hover:text-gray-300 text-xl">Contatti</router-link>
   </div>
 </template>
