@@ -36,6 +36,11 @@
             <p class="text-black font-bold text-2xl">LEGNAGO (Verona)</p>
             <p><strong>Dove:</strong> Via Leopardi, 3 – Scuole Elementari G. Cotta</p>
             <p><strong>Quando:</strong> Sabato dalle ore 16.00 alle ore 17.30</p>
+
+            <h2 class="text-red-600 font-bold text-3xl">ULTERIORI INFO</h2>
+            <p>Per qualsiasi ulteriore infromazione riguardo i corsi contattatemi direttamente ai miei contatti:</p>
+            <p><strong>Cel. /WhatsApp</strong> 3358014379</p>
+            <p><strong>e-mail:</strong> cm.lucky71@gmail.com</p>
           </div>
         </div>
       </div>

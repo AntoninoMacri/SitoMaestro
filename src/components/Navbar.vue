@@ -176,16 +176,16 @@
       <!-- Dropdown Blog -->
       <li>
         <router-link v-if="$route.path !== '/blog'" to="/blog" class="text-white hover:text-gray-300 text-xl"
-          >Blog</router-link
+          >Foto</router-link
         >
-        <span v-else class="text-xl">Blog</span>
+        <span v-else class="text-xl">Foto</span>
       </li>
 
       <li>
         <router-link v-if="$route.path !== '/contact'" to="/contact" class="text-white hover:text-gray-300 text-xl"
-          >Contatti</router-link
+          >Iscrizione</router-link
         >
-        <span v-else class="text-xl">Contatti</span>
+        <span v-else class="text-xl">Iscrizione</span>
       </li>
     </ul>
     <!-- Mobile menu icon -->
