@@ -21,11 +21,13 @@
       radiofoniche.
     </p>
     <img
-      src="../../assets/Foto_Cheung1.gif"
-      alt="Foto del G.M. William Cheung con i Coltelli a farfalla"
+      src="../../assets/William-Cheung-WD.jpg"
+      alt="Foto del giovane G.M. William Cheung in allenamento nella forma dell'uomo di legno"
       class="w-full max-w-xs mx-auto rounded-lg shadow-lg object-contain"
     />
-    <p class="text-center text-gray-600 mt-4">G.M. William Cheung con i Coltelli a farfalla</p>
+    <p class="text-center text-gray-600 mt-4">
+      Foto del giovane G.M. William Cheung in allenamento nella forma dell'uomo di legno
+    </p>
 
     <!-- Risultati e percorso -->
     <h2 class="text-red-600 font-bold text-2xl">Risultati e percorso</h2>
